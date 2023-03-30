@@ -10,6 +10,8 @@ def ttest(_arg1, _arg2):
     to tabpy-tools.md
     """
     # one sample test with mean
+    print("\n\narg2: ", set(_arg2))
+    print("\n\n")
     if len(_arg2) == 1:
         test_stat, p_value = stats.ttest_1samp(_arg1, _arg2)
         return p_value
